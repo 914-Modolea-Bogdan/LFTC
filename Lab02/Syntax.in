@@ -1,0 +1,35 @@
+program ::= decllist ";"
+
+decllist ::= declaration | declaration ";" decllist
+
+declaration ::= "let"type identifierlist
+
+identifierlist ::= IDENTIFIER ["=" expression]
+
+type ::= "Int" | "String" | "Bool" | "Double"
+
+stmtlist ::= stmt | stmt ";" stmtlist
+
+stmt ::= simplstmt | structstmt
+
+simplstmt ::= assignstmt | iostmt
+
+assignstmt ::= IDENTIFIER "=" expression
+
+expression ::= expression "+" term | term
+
+term ::= term "*" factor | factor
+
+factor ::= "(" expression ")" | IDENTIFIER
+
+iostmt ::= "read" | "print" "(" IDENTIFIER ")"
+
+structstmt ::= cmpdstmt | ifstmt | whilestmt
+
+ifstmt ::= "if" "(" condition ")" "{" {stmt} "}" ["else" "{" {stmt} "}"]
+
+forstmt ::= "for" "(" assignstmt ";" condition ";" expression ")" "{" {stmt} "}"
+
+condition ::= expression RELATION expression
+
+RELATION ::= "<" | "<=" | "=" | "<>" | ">=" | ">"
