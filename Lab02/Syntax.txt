@@ -1,8 +1,10 @@
+# Syntax.in
+
 program ::= decllist ";"
 
 decllist ::= declaration | declaration ";" decllist
 
-declaration ::= "let"type identifierlist
+declaration ::= "letInt" | "letString" | "letBool" | "letDouble" identifierlist
 
 identifierlist ::= IDENTIFIER ["=" expression]
 

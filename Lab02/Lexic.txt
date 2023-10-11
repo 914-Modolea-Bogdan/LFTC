@@ -1,3 +1,6 @@
+# Lexic.txt
+
+
 Alphabet:
 
 a. Upper (A-Z) and lower case letters (a-z) of the English alphabet
@@ -9,8 +12,8 @@ Lexic:
 
 a.Special symbols, representing:
 	- operators + - * / == < <= = >= >
-	- separators { }  ()  ; space , " 
-	- reserved words: letInt, letString, letBool, letDouble, if, else, print, read, for
+	- separators { }  ()  ; space newline , " 
+	- reserved words: letInt, letString, letBool, letDouble, if, else, print, read, for, newline
 
 b.identifiers
   -a sequence of letters and  digits, such that the first character is a letter; the rule is:
