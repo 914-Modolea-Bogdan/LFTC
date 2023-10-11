@@ -13,7 +13,7 @@ Lexic:
 a.Special symbols, representing:
 	- operators + - * / == < <= = >= >
 	- separators { }  ()  ; space newline , " 
-	- reserved words: letInt, letString, letBool, letDouble, if, else, print, read, for, newline
+	- reserved words: letInt, letString, letBool, letDouble, if, else, print, read, for
 
 b.identifiers
   -a sequence of letters and  digits, such that the first character is a letter; the rule is:
