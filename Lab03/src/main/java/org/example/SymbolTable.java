@@ -14,10 +14,20 @@ public class SymbolTable {
         }
     }
 
+    /**
+     *
+     * @param symbol: String -> symbol for which the hash should be computed
+     * @return: an integer representing the hash code for the specified symbol
+     */
     private int hash(String symbol) {
         return symbol.codePoints().sum() % size;
     }
 
+    /**
+     *
+     * @param symbol: String -> the symbol to be added
+     * @return: true or false if the symbol was successfully added to the symbols list.
+     */
     public boolean addSymbol(String symbol) {
         int hashValue = hash(symbol);
 
@@ -29,10 +39,20 @@ public class SymbolTable {
         return true;
     }
 
+    /**
+     *
+     * @param symbol: String -> symbol to be found
+     * @return: true or false if the symbol was successfully found in the symbols list.
+     */
     public boolean containsSymbol(String symbol) {
         return symbols.get(hash(symbol)).contains(symbol);
     }
 
+    /**
+     *
+     * @param symbol: String -> the symbol to be removed
+     * @return: true or false if the symbol was removed from the symbols list
+     */
     public boolean removeSymbol(String symbol) {
         int hashValue = hash(symbol);
 
@@ -44,6 +64,11 @@ public class SymbolTable {
         return true;
     }
 
+    /**
+     *
+     * @param symbol: String -> symbol for which the position to be searched
+     * @return: a pair the position where the symbol was found
+     */
     public Pair getPosition(String symbol) {
         if (!containsSymbol(symbol))
             return null;
