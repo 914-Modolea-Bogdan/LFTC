@@ -26,7 +26,7 @@ factor ::= "(" expression ")" | IDENTIFIER
 
 iostmt ::= "read" | "print" "(" IDENTIFIER ")"
 
-structstmt ::= cmpdstmt | ifstmt | whilestmt
+structstmt ::= cmpdstmt | ifstmt
 
 ifstmt ::= "if" "(" condition ")" "{" {stmt} "}" ["else" "{" {stmt} "}"]
 
