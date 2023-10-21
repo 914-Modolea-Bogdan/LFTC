@@ -7,24 +7,24 @@ public class Main {
         String[] symbols = {"x", "y", "t", "i", "y"};
 
         System.out.println("Add --------------");
-        for (int i = 0; i < symbols.length; ++i) {
-            System.out.println(symbolTable.addSymbol(symbols[i]));
+        for (String s : symbols) {
+            System.out.println(symbolTable.addSymbol(s));
         }
 
         System.out.println("\nContains --------------");
-        for (int i = 0; i < symbols.length; ++i) {
-            System.out.println(symbolTable.containsSymbol(symbols[i]));
+        for (String symbol : symbols) {
+            System.out.println(symbolTable.containsSymbol(symbol));
         }
 
         symbols = new String[]{"i", "x", "t", "y", "z"};
         System.out.println("\nPosition --------------");
-        for (int i = 0; i < symbols.length; ++i) {
-            System.out.println(symbolTable.getPosition(symbols[i]));
+        for (String symbol : symbols) {
+            System.out.println(symbolTable.getPosition(symbol));
         }
 
         System.out.println("\nRemove --------------");
-        for (int i = 0; i < symbols.length; ++i) {
-            System.out.println(symbolTable.removeSymbol(symbols[i]));
+        for (String symbol : symbols) {
+            System.out.println(symbolTable.removeSymbol(symbol));
         }
     }
 }

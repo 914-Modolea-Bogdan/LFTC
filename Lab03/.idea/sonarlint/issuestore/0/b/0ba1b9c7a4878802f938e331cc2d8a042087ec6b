@@ -1,9 +1,9 @@
 
-Z	java:S106	"9Replace this use of System.out or System.err by a logger.(¦ÖÕãøÿÿÿÿ8¬¡»Ÿ³1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(°¶ú÷8®¡»Ÿ³1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ç·÷û8¯¡»Ÿ³1
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ô‹“²8°¡»Ÿ³1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(™ò¦ùÿÿÿÿ8²¡»Ÿ³1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(åÕ¤êÿÿÿÿÿ8³¡»Ÿ³1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(õùÄÁÿÿÿÿÿ8µ¡»Ÿ³1
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ¤©ÿüÿÿÿÿ8·¡»Ÿ³1
+L	java:S106	"+Replace this use of System.out by a logger.(¦ÖÕãøÿÿÿÿ8˜ùÄ‘µ1
+L	java:S106"+Replace this use of System.out by a logger.(ü®¿°ûÿÿÿÿ8™ùÄ‘µ1
+G	java:S106"+Replace this use of System.out by a logger.(ç·÷û8šùÄ‘µ1
+L	java:S106"+Replace this use of System.out by a logger.(«ƒ“üüÿÿÿÿ8›ùÄ‘µ1
+L	java:S106"+Replace this use of System.out by a logger.(™ò¦ùÿÿÿÿ8œùÄ‘µ1
+G	java:S106"+Replace this use of System.out by a logger.(ÛÁå†8ùÄ‘µ1
+L	java:S106"+Replace this use of System.out by a logger.(õùÄÁÿÿÿÿÿ8ùÄ‘µ1
+G	java:S106"+Replace this use of System.out by a logger.(à¸Ìä8ŸùÄ‘µ1
