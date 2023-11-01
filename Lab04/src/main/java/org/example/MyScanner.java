@@ -1,15 +1,9 @@
 package org.example;
 
-import com.google.common.base.CharMatcher;
-import com.google.common.base.Splitter;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class MyScanner {
     private final String CONST_REGEX = "^0|[1-9]([0-9])*|[-|+][1-9]([0-9])*|'[1-9]'|'[a-zA-Z]'|\"[0-9]*[a-zA-Z ]*\"$";
@@ -32,13 +26,14 @@ public class MyScanner {
 
     /**
      * This method reads the operator, separator, and reserved word lists from a file, populating the corresponding lists.
+     *
      * @throws FileNotFoundException
      */
     public void readTokens() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("tokens/token.in"));
         while (scanner.hasNext()) {
             String read = scanner.nextLine();
-            if(Objects.equals(read, "#operators")){
+            if (Objects.equals(read, "#operators")) {
                 break;
             }
             operators.add(read);
@@ -46,13 +41,12 @@ public class MyScanner {
 
         while (scanner.hasNext()) {
             String read = scanner.nextLine();
-            if(Objects.equals(read, "#separators")){
+            if (Objects.equals(read, "#separators")) {
                 break;
             }
-            if(Objects.equals(read, "space")) {
+            if (Objects.equals(read, "space")) {
                 read = " ";
-            }
-            else if(Objects.equals(read, "newline")) {
+            } else if (Objects.equals(read, "newline")) {
                 read = "\n";
             }
             separators.add(read);
@@ -67,6 +61,7 @@ public class MyScanner {
 
     /**
      * Reads the content of the source code file.
+     *
      * @return the content of the source code as a String.
      * @throws FileNotFoundException
      */
@@ -83,6 +78,7 @@ public class MyScanner {
     /**
      * Splits the source code into a list of tokens using separators.
      * Processes the list of tokens and categorizes them.
+     *
      * @return a list of pairs (token, line) where each token is associated with the line it appears on.
      */
     List<Pair<String, Integer>> getTokens() {
