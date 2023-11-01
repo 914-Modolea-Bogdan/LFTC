@@ -92,13 +92,9 @@ public class MyScanner {
 
         try {
             String code = readProgram();
-            StringBuilder separatorsString = new StringBuilder();
+            String separatorsString = String.join("", separators); // Concatenate separators
 
-            for(String separator : separators) {
-                separatorsString.append(separator);
-            }
-
-            StringTokenizer tokenizer = new StringTokenizer(code, separatorsString.toString(), true);
+            StringTokenizer tokenizer = new StringTokenizer(code, separatorsString, true);
 
             while (tokenizer.hasMoreTokens()) {
                 tokens.add(tokenizer.nextToken());
@@ -108,31 +104,44 @@ public class MyScanner {
         }
 
         for (int i = 0; i < tokens.size(); i++) {
-            if(!Objects.equals(tokens.get(i), " ")) {
+            String token = tokens.get(i);
 
-                if(Objects.equals(tokens.get(i), "\"")) {
-                    StringBuilder string = new StringBuilder();
-                    string.append(tokens.get(i));
+            if (!token.equals(" ")) {
+                if (token.equals("\"")) {
+                    StringBuilder string = new StringBuilder(token);
                     int j = i + 1;
-                    while (!Objects.equals(tokens.get(j), "\"")) {
+
+                    while (!tokens.get(j).equals("\"")) {
                         string.append(tokens.get(j));
                         j++;
                     }
+
                     string.append(tokens.get(j));
                     i = j;
-                    ans.add(new Pair<>(String.valueOf(string), line));
-                }
-                else {
-                    if (Objects.equals(tokens.get(i), "\n")) {
+                    ans.add(new Pair<>(string.toString(), line));
+                } else {
+                    if (token.equals("\n")) {
                         line++;
                     } else {
-                        ans.add(new Pair<>(tokens.get(i), line));
+                        ans.add(new Pair<>(token, line));
                     }
                 }
-
             }
         }
+
         return ans;
+    }
+
+    private boolean isReservedWord(String token) {
+        return reservedWords.contains(token);
+    }
+
+    private boolean isOperator(String token) {
+        return operators.contains(token);
+    }
+
+    private boolean isSeparator(String token) {
+        return separators.contains(token);
     }
 
     /**
@@ -140,29 +149,21 @@ public class MyScanner {
      * Any lexical errors are reported. The results are stored in the PIF and symbol table.
      */
     public void scan() {
-        boolean error = false;
-
         List<Pair<String, Integer>> tokens = getTokens();
-        for (Pair<String, Integer> t : tokens) {
-            String token = t.getFirst();
+        for (Pair<String, Integer> tokenPair : tokens) {
+            String token = tokenPair.getFirst();
+            int line = tokenPair.getSecond();
 
-            if (this.reservedWords.contains(token)) {
-                this.pif.add(new Pair<>(token, "-1"));
-            } else if (this.operators.contains(token)) {
-                this.pif.add(new Pair<>(token, "-1"));
-            } else if (this.separators.contains(token)) {
-                this.pif.add(new Pair<>(token, "-1"));
+            if (isReservedWord(token) || isOperator(token) || isSeparator(token)) {
+                pif.add(new Pair<>(token, "-1"));
             } else if (Pattern.compile(CONST_REGEX).matcher(token).matches()) {
-                this.st.addSymbol(token);
-                this.pif.add(new Pair<>("CONST", st.getPosition(token).getFirst().toString()));
-//                this.pif.add(new Pair<>("CONST", token));
+                st.addSymbol(token);
+                pif.add(new Pair<>("CONST", st.getPosition(token).getFirst().toString()));
             } else if (Pattern.compile(IDENTIFIER_REGEX).matcher(token).matches()) {
-                this.st.addSymbol(token);
-                this.pif.add(new Pair<>("ID", st.getPosition(token).getFirst().toString()));
-//                this.pif.add(new Pair<>("ID", token));
+                st.addSymbol(token);
+                pif.add(new Pair<>("ID", st.getPosition(token).getFirst().toString()));
             } else {
-                System.out.println("lexical error at line " + t.getSecond() + ": " + t.getFirst());
-                error = true;
+                System.out.println("Lexical error at line " + line + ": " + token);
             }
         }
     }
