@@ -1,0 +1,42 @@
+
+t	java:S127n"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÌµĞ·8ğ•¬¸1
+g
+java:S2095C"EUse try-with-resources or close this "Scanner" in a "finally" clause.(šè™óùÿÿÿÿ8ø•¬¸1
+g
+java:S2095%"EUse try-with-resources or close this "Scanner" in a "finally" clause.(•ÎÃÆúÿÿÿÿ8ø•¬¸1
+r	java:S116"VRename this field "CONST_REGEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­´‹©8ø•¬¸1
+|	java:S116"[Rename this field "IDENTIFIER_REGEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡šõÿÿÿÿÿ8ø•¬¸1
+>
+java:S1170"!Make this final field static too.(­´‹©8ø•¬¸1
+C
+java:S1170"!Make this final field static too.(¡šõÿÿÿÿÿ8ø•¬¸1
+]	java:S125"<This block of commented-out lines of code should be removed.(‹½İÛüÿÿÿÿ8ü•¬¸1
+X	java:S125"<This block of commented-out lines of code should be removed.(™à÷8ş•¬¸1
+X	java:S125"<This block of commented-out lines of code should be removed.(¿ê‚î8ş•¬¸1
+H
+java:S1168["+Return an empty collection instead of null.(¥¹ï8‹‘•¬¸1
+t
+java:S3776^"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ìƒÉúÿÿÿÿ8‹‘•¬¸1
+q
+java:S5850"TGroup parts of the regex together to make the intended operator precedence explicit.(­´‹©8Õçò¬¸1
+Y
+java:S6353"<Use concise character class syntax '\\d' instead of '[0-9]'.(­´‹©8Öçò¬¸1
+Y
+java:S6353"<Use concise character class syntax '\\d' instead of '[0-9]'.(­´‹©8Öçò¬¸1
+Y
+java:S6353"<Use concise character class syntax '\\d' instead of '[0-9]'.(­´‹©8ƒÖô¬¸1
+H	java:S106™"+Replace this use of System.out by a logger.(««È8•‘•¬¸1
+H	java:S106Ÿ"+Replace this use of System.out by a logger.(•¸€8•‘•¬¸1
+[
+java:S1128"?Remove this unused import 'com.google.common.base.CharMatcher'.(»Óƒ-8Ö‚å¬¸1
+^
+java:S1128"<Remove this unused import 'com.google.common.base.Splitter'.(å°üúÿÿÿÿ8Ö‚å¬¸1
+h
+java:S1128	"FRemove this unused import 'java.util.concurrent.atomic.AtomicBoolean'.(§­‹¼üÿÿÿÿ8Ö‚å¬¸1
+Q
+java:S1128
+"4Remove this unused import 'java.util.regex.Matcher'.(ëÅ›ã8Ö‚å¬¸1
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8Ö‚å¬¸1
+q
+java:S5843"TSimplify this regular expression to reduce its complexity from 22 to the 20 allowed.(­´‹©8“Öô¬¸1
