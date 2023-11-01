@@ -18,14 +18,14 @@ public class Main {
     private static void run(String filePath) throws FileNotFoundException {
         MyScanner scanner = new MyScanner(filePath);
         scanner.scan();
-        printToFile(filePath.replace(".txt", "ST.txt"), scanner.getSymbolTable());
+        printToFile(filePath.replace(".txt", "ST.txt"), scanner.getSt());
         printToFile(filePath.replace(".txt", "PIF.txt"), scanner.getPif());
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        //run("programs/p1/p1.txt");
+        run("programs/p1/p1.txt");
         //run("programs/p2/p2.txt");
         //run("programs/p3/p3.txt");
-        run("programs/p1err/p1err.txt");
+        //run("programs/p1err/p1err.txt");
     }
 }

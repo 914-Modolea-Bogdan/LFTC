@@ -169,31 +169,23 @@ public class MyScanner {
     }
 
 
-    public String getPif(){
+    public String getPif() {
         StringBuilder computedString = new StringBuilder();
-        for(int i = 0; i < this.pif.size(); i++) {
-            int len1 = this.pif.get(i).getFirst().length();
-            computedString
-                    .append("| ")
-                    .append(this.pif.get(i).getFirst());
-            for(int j = 0; j < 10 - len1; j++) {
-                computedString.append(" ");
-            }
-            computedString
-                    .append("| ");
-            if(!Objects.equals(this.pif.get(i).getSecond(), "-1")) {
-                computedString.append(" ");
-            }
-            computedString
-                    .append(this.pif.get(i).getSecond())
-                    .append(" |")
-                    .append("\n");
+        for (Pair<String, String> pair : this.pif) {
+            String first = pair.getFirst();
+            String second = pair.getSecond();
+
+            String formattedFirst = String.format("| %-10s |", first);
+            String formattedSecond = (Objects.equals(second, "-1")) ? " -1" : "  " + second;
+
+            computedString.append(formattedFirst).append(formattedSecond).append(" |\n");
         }
 
         return computedString.toString();
     }
 
-    public SymbolTable getSymbolTable() {
+
+    public SymbolTable getSt() {
         return this.st;
     }
 }
