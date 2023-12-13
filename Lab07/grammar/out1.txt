@@ -1,0 +1,8 @@
+index 0: info='a', parent=7, rightSibling=6
+index 1: info='b', parent=6, rightSibling=5
+index 2: info='b', parent=5, rightSibling=4
+index 3: info='c', parent=4, rightSibling=-1
+index 4: info='A', parent=5, rightSibling=-1
+index 5: info='A', parent=6, rightSibling=-1
+index 6: info='A', parent=7, rightSibling=-1
+index 7: info='S', parent=-1, rightSibling=-1

@@ -1,0 +1,21 @@
+
+c	java:S112µ"FDefine and throw a dedicated exception instead of using a generic one.(Ëî¢8ä†ÍÏÅ1
+h	java:S112»"FDefine and throw a dedicated exception instead of using a generic one.(ù¦Û£øÿÿÿÿ8ä†ÍÏÅ1
+c	java:S112¿"FDefine and throw a dedicated exception instead of using a generic one.(¦ª“8ä†ÍÏÅ1
+c	java:S112Ü"FDefine and throw a dedicated exception instead of using a generic one.(õó£ê8ä†ÍÏÅ1
+c	java:S112ß"FDefine and throw a dedicated exception instead of using a generic one.(ã‡šÈ8ä†ÍÏÅ1
+h	java:S112§"FDefine and throw a dedicated exception instead of using a generic one.(Ó´éıÿÿÿÿ8‚ÔºóÅ1
+R
+java:S3740¬"/Provide the parametrized type for this generic.(Û»êÜşÿÿÿÿ8å†ÍÏÅ1
+M
+java:S3740Á"/Provide the parametrized type for this generic.(ÇÁÓ8å†ÍÏÅ1
+M
+java:S3740Ã"/Provide the parametrized type for this generic.(ñØŞÎ8å†ÍÏÅ1
+L
+java:S3740Õ"/Provide the parametrized type for this generic.(ÒàÒj8å†ÍÏÅ1
+R
+java:S3740×"/Provide the parametrized type for this generic.(ÌŒŞÅüÿÿÿÿ8å†ÍÏÅ1
+Z
+java:S3655š"7Call "Optional#isPresent()" before accessing the value.(€Ê¥øÿÿÿÿ8ˆÍÏÅ1
+G
+java:S5413Ñ")Verify that "remove()" is used correctly.(“¥·Á8¦ˆÍÏÅ1

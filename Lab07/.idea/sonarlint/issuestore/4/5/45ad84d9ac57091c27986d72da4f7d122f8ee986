@@ -1,0 +1,29 @@
+
+g
+java:S20956"EUse try-with-resources or close this "Scanner" in a "finally" clause.(óòñìşÿÿÿÿ8Ì±¸–Æ1
+L	java:S106	"+Replace this use of System.out by a logger.(şÅÈëıÿÿÿÿ8ŒÙµ–Æ1
+G	java:S106
+"+Replace this use of System.out by a logger.(„ Ü´8Ùµ–Æ1
+G	java:S106"+Replace this use of System.out by a logger.(«†Šê8Ùµ–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(½ŸÌÿÿÿÿÿ8Ùµ–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(Š¶È˜üÿÿÿÿ8Ùµ–Æ1
+G	java:S106"+Replace this use of System.out by a logger.(°àéĞ8‘Ùµ–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(ŒãÕŠøÿÿÿÿ8‘Ùµ–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(ïÚâÀşÿÿÿÿ8’Ùµ–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8“Ùµ–Æ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(æ¡„í8”Ùµ–Æ1
+G	java:S106"+Replace this use of System.out by a logger.(€ê®…8¢Ùµ–Æ1
+L	java:S106$"+Replace this use of System.out by a logger.(î‡ó©ùÿÿÿÿ8£Ùµ–Æ1
+L	java:S106'"+Replace this use of System.out by a logger.(´ƒÓşÿÿÿÿ8¤Ùµ–Æ1
+L	java:S106)"+Replace this use of System.out by a logger.(¬‚»üÿÿÿÿ8¥Ùµ–Æ1
+L	java:S106+"+Replace this use of System.out by a logger.(ë™Êÿúÿÿÿÿ8¥Ùµ–Æ1
+L	java:S106-"+Replace this use of System.out by a logger.(äÚãûüÿÿÿÿ8¦Ùµ–Æ1
+G	java:S106/"+Replace this use of System.out by a logger.(¸ë¹‰8§Ùµ–Æ1
+G	java:S1061"+Replace this use of System.out by a logger.(§«…Ô8²Ùµ–Æ1
+G	java:S1064"+Replace this use of System.out by a logger.(‹ã¥8³Ùµ–Æ1
+L	java:S106?"+Replace this use of System.out by a logger.(”Ò¦¢ûÿÿÿÿ8µÙµ–Æ1
+G	java:S106D"+Replace this use of System.out by a logger.(ûºÀ£8ô±¸–Æ1
+L	java:S106H"+Replace this use of System.out by a logger.(ı™øøÿÿÿÿ8ô±¸–Æ1
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8õ±¸–Æ1
